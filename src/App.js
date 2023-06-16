@@ -12,12 +12,12 @@ function App() {
   texto.push({
     texto: 'div 3',
   });
-
+  
   return (
     <div className="App">
-      {texto.map((item, index) => (
-        <div key={index}>
-          {item.texto && <h2>{item.texto}</h2>}
+      {texto.map((carts) => (
+        <div className='div'>
+          {carts.texto && <h2>{carts.texto}</h2>}
         </div>
       ))}
     </div>
