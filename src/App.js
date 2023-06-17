@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Cards from './cards';
+import data from './data';
 
 function App() {
  
   
   return (
-   <Cards />
+   <data />
   );
 } 
 

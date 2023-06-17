@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function Cards() {
+function data() {
   const texto = [];
   texto.push({
     texto: '¿Como hacer un div por cada Array ?',
@@ -15,13 +15,13 @@ function Cards() {
   
   return (
     <div>
-      {texto.map((cards) => (
+      {texto.map((data) => (
         <div className='div'>
-          {cards.texto && <h2>{cards.texto}</h2>}
+          {data.texto && <h2>{data.texto}</h2>}
         </div>
       ))}
     </div>
   );
 }
 
-export default Cards;
+export default data;
