@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function data() {
+function Data({ data }) {
   const texto = [];
   texto.push({
     texto: '¿Como hacer un div por cada Array ?',
@@ -12,10 +12,9 @@ function data() {
   texto.push({
     texto: 'div 3',
   });
-  
   return (
     <div>
-      {texto.map((data) => (
+      {data.map((data) => (
         <div className='div'>
           {data.texto && <h2>{data.texto}</h2>}
         </div>
@@ -24,4 +23,4 @@ function data() {
   );
 }
 
-export default data;
+export default Data;

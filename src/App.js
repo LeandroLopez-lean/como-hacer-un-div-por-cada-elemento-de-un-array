@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import data from './data';
+import Data from './data';
 
 function App() {
  
   
   return (
-   <data />
+    <div className="App">
+    <Data>{texto} </Data>
+  </div>
   );
 } 
 
