@@ -1,15 +1,24 @@
 import React from 'react';
 import './App.css';
-import Data from './data';
+import Cards from './Cards';
 
 function App() {
- 
-  
+  const texto = [];
+  texto.push({
+    texto: '¿Como hacer un div por cada Array ?',
+  });
+  texto.push({
+    texto: 'div 2',
+  });
+  texto.push({
+    texto: 'div 3',
+  });
+
   return (
     <div className="App">
-    <Data>{texto} </Data> {/*  Line 10:12:  'texto' is not defined */}  no-undef
-  </div>
+      <Cards data={texto} />
+    </div>
   );
-} 
+}
 
 export default App;
