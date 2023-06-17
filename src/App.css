@@ -1,15 +1,37 @@
 .App {
-  color: blue;
+  color: rgb(84, 80, 80);
+
+}
+body{
+  background-color:antiquewhite;
 
 }
 .div{
-  border: 5px black solid;
-  width: 200px;
-  height: 150px;
+  background-color: white;
+  border-radius: 10PX; /* me queda hacerle la sombro */
+  width: 450px;
+  height: 100px;
   margin-top: 25px;
-  margin-left: 800px;
-  padding: 10px;
+  margin-left: 100px;
+  padding-left: 10px;
 }
+.water-icon{
+  padding-left: -110;
+  align-items:flex-end;
+}
+.descarga {
+  padding-left: 220px;
+  align-items:flex-end;
+}
+.menu-icon{
+  padding-left: 20px;
+  align-items:flex-end;
+}
+.exclamation-icon{
+  padding-left: 20px;
+  align-items:flex-end;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

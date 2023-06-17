@@ -1,17 +1,25 @@
 import React from 'react';
 import './App.css';
 import Cards from './Cards';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 function App() {
   const texto = [];
   texto.push({
-    texto: '¿Como hacer un div por cada Array ?',
+    texto: 'Nombre de la capa',
   });
   texto.push({
-    texto: 'div 2',
+    texto: 'Nombre de la capa',
   });
   texto.push({
-    texto: 'div 3',
+    texto: 'Nombre de la capa',
+  });
+  texto.push({
+    texto: 'Nombre de la capa',
+  });
+  texto.push({
+    texto: 'Nombre de la capa',
   });
 
   return (
