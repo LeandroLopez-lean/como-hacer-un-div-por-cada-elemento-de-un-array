@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div className="App">
-    <Data>{texto} </Data>
+    <Data>{texto} </Data> {/*  Line 10:12:  'texto' is not defined */}  no-undef
   </div>
   );
 } 
