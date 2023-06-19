@@ -1,32 +1,22 @@
 import React from 'react';
-import './App.css';
 import Cards from './Cards';
-import '@fortawesome/fontawesome-free/css/all.css';
-
 
 function App() {
-  const texto = [];
-  texto.push({
-    texto: 'Nombre de la capa',
-  });
-  texto.push({
-    texto: 'Nombre de la capa',
-  });
-  texto.push({
-    texto: 'Nombre de la capa',
-  });
-  texto.push({
-    texto: 'Nombre de la capa',
-  });
-  texto.push({
-    texto: 'Nombre de la capa',
-  });
+  const data = [
+    { texto: 'Nombre de la capa' },
+    { texto: 'Nombre de la capa' },
+    { texto: 'Nombre de la capa' },
+    { texto: 'Nombre de la capa' },
+    { texto: 'Nombre de la capa' },
+
+  ];
 
   return (
-    <div className="App">
-      <Cards data={texto} />
+    <div className='App'>
+      <Cards data={data} />
     </div>
   );
 }
 
 export default App;
+
