@@ -9,14 +9,16 @@ import './App.css';
 
 function Cards({ data }) {
   return (
-    <div  className='App'>
-      {data.map((card, index) => (
-        <Card key={index}>
-          <Text>{card.texto}</Text>
+    <div className=''>
+      {data.map((card) => (
+        <Card className='div'>
+          <Text>{card.texto} {card.info}</Text>
+          <div className='icono'>
           <FontAwesomeIcon icon={faWater} className="water-icon" />
-          <FontAwesomeIcon icon={faDownload} />
+          <FontAwesomeIcon icon={faDownload} className='dowloand'/>
           <FontAwesomeIcon icon={faBars} className="menu-icon" />
           <FontAwesomeIcon icon={faExclamationCircle} className="exclamation-icon" />
+          </div>
         </Card>
       ))}
     </div>

@@ -1,5 +1,5 @@
 .App {
-  color: rgb(81, 80, 84);
+  color: red;
 
 }
 body{
@@ -7,27 +7,15 @@ body{
 
 }
 .div{
-  background-color: white;
+  color: rgb(65, 56, 56);
   border-radius: 10PX; /* me queda hacerle la sombra */
-  width: 50px;
-  height: 100px;
+  width: 500px;
+  height: 150px;
   margin-top: 25px;
   margin-left: 100px;
   padding-left: 10px;
 }
-.water-icon{
-  padding-left: 210;
-  align-items:flex-end;
-}
-.descarga {
-  padding-left: 20px;
-  align-items:flex-end;
-}
-.menu-icon{
-  padding-left: 20px;
-  align-items:flex-end;
-}
-.exclamation-icon{
+.icono{
   padding-left: 20px;
   align-items:flex-end;
 }
