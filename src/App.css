@@ -6,6 +6,33 @@ body{
   background-color:antiquewhite;
 
 }
+.card-container {
+  display: grid;
+  color: rgb(65, 56, 56);
+  border-radius: 10PX; /* me queda hacerle la sombra */
+  width: 500px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 100px;
+  padding-left: 10px;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr 2fr;
+  align-items: top;
+}
+
+.icon-container {
+  display: flex;
+  gap: 10px;
+  align-items:flex-end;
+}
+.water-icon{
+  padding-right: 350px;
+  align-items:flex-end;
+}
+.icono{
+  padding-left: 20px;
+  align-items:flex-end;
+}
 .div{
   color: rgb(65, 56, 56);
   border-radius: 10PX; /* me queda hacerle la sombra */
@@ -15,10 +42,7 @@ body{
   margin-left: 100px;
   padding-left: 10px;
 }
-.icono{
-  padding-left: 20px;
-  align-items:flex-end;
-}
+
 
 
 @media (prefers-reduced-motion: no-preference) {

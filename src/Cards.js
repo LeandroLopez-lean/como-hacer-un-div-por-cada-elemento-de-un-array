@@ -10,10 +10,10 @@ import './App.css';
 function Cards({ data }) {
   return (
     <div className=''>
-      {data.map((card) => (
-        <Card className='div'>
+      {data.map((card, info) => (
+        <Card className='card-container'>
           <Text>{card.texto} {card.info}</Text>
-          <div className='icono'>
+          <div className='icon-container'>
           <FontAwesomeIcon icon={faWater} className="water-icon" />
           <FontAwesomeIcon icon={faDownload} className='dowloand'/>
           <FontAwesomeIcon icon={faBars} className="menu-icon" />
