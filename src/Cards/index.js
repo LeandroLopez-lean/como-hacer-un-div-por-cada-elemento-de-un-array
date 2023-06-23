@@ -7,15 +7,16 @@ import { faWater } from '@fortawesome/free-solid-svg-icons';
 import { Card, Text, info} from '@mantine/core';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import './index.css';
 
-import './App.css';
 
-function Cards({ data, info }) {
+
+function Cards({ data, info, onDownload }) {
   return (
-    <div className=''>
+    <div className='div'>
       {data.map((card, index) => (
         <Card key={index} className='card-container'>
-          <div>
+          <div className='titulo'>
             <Text>{card.texto}</Text>
             <FontAwesomeIcon className="close-icon" icon={faTimes} />
              {/* Agregar el texto de la categoría */}
@@ -23,7 +24,11 @@ function Cards({ data, info }) {
             <div className='icon-container'>
               <FontAwesomeIcon icon={faWater} className="water-icon" />
               <Text className='categori'>{info[index].item}</Text>
-              <FontAwesomeIcon icon={faDownload} className='dowloand'/>
+              <button><FontAwesomeIcon 
+                icon={faDownload} 
+                className='dowloand' 
+                onClick={onDownload}
+              /></button>
               <FontAwesomeIcon icon={faBars} className="menu-icon" />
               <FontAwesomeIcon icon={faExclamationCircle} className="exclamation-icon" />
               <FontAwesomeIcon icon={faSlidersH} className="potentiometer-icon" /> 

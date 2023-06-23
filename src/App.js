@@ -1,6 +1,6 @@
 import React from 'react';
-import Cards from './Cards';
-import './App.css';
+import Cards from './Cards/index.js';
+import './Cards/index.js';
 
 function App() {
   const data = [
@@ -15,13 +15,15 @@ function App() {
     {item: 'categoria'},
     {item: 'categoria'},
     {item: 'categoria'},
-    {item: 'categoria'},
+    {item: 'categoria'},  
     {item: 'categoria'}
   ];
+  const descarga = console.log("descarga");
+  
 
   return (
     <div className='App'>
-      <Cards data={data} info={info}/>
+      <Cards data={data} info={info} onDownload={descarga}/>
     </div>
   );
 }

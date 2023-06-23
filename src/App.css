@@ -2,54 +2,7 @@
   color: red;
 
 }
-body{
-  background-color:antiquewhite;
 
-}
-.card-container {
-  display: grid;
-  color: rgb(65, 56, 56);
-  border-radius: 10PX; /* me queda hacerle la sombra */
-  width: 500px;
-  height: 150px;
-  margin-top: 25px;
-  margin-left: 100px;
-  padding-left: 10px;
-  grid-template-columns: 3fr;
-  grid-template-rows: 3fr 2fr;
-  align-items: top;
-}
-
-.icon-container {
-  display: flex;
-  gap: 10px;
-  align-items:flex-end;
-}
-.categori{
-  padding-right: 250px;
-}
-.icono{
-  padding-left: 20px;
-  align-items:flex-end;
-}
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: black;
-  font-size: 24px;
-}
-
-.div{
-  color: rgb(65, 56, 56);
-  border-radius: 10PX; /* me queda hacerle la sombra */
-  width: 500px;
-  height: 150px;
-  margin-top: 25px;
-  margin-left: 100px;
-  padding-left: 10px;
-}
 
 
 
