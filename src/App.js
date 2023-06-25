@@ -18,7 +18,9 @@ function App() {
     {item: 'categoria'},  
     {item: 'categoria'}
   ];
-  const descarga = console.log("descarga");
+  const descarga = () => {
+     console.log("descarga");
+    };
   
 
   return (

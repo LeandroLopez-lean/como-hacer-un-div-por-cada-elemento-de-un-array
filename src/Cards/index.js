@@ -1,12 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faExclamationCircle, } from '@fortawesome/free-solid-svg-icons';
-import { faWater } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faDownload, 
+    faTimes, 
+    faSlidersH, 
+    faWater, faBars, 
+    faExclamationCircle
+} from '@fortawesome/free-solid-svg-icons';
 import { Card, Text, info} from '@mantine/core';
-import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 
 
@@ -24,11 +25,10 @@ function Cards({ data, info, onDownload }) {
             <div className='icon-container'>
               <FontAwesomeIcon icon={faWater} className="water-icon" />
               <Text className='categori'>{info[index].item}</Text>
-              <button><FontAwesomeIcon 
+              <FontAwesomeIcon 
                 icon={faDownload} 
                 className='dowloand' 
-                onClick={onDownload}
-              /></button>
+                onClick={onDownload} />
               <FontAwesomeIcon icon={faBars} className="menu-icon" />
               <FontAwesomeIcon icon={faExclamationCircle} className="exclamation-icon" />
               <FontAwesomeIcon icon={faSlidersH} className="potentiometer-icon" /> 
