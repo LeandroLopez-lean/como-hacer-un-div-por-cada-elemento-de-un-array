@@ -4,21 +4,21 @@ import './Cards/index.js';
 import './index.css';
 
 function App() {
-  const data = [
+  const cardsData = [
     { title: 'Nombre de la capa1',
-      category: 'name category A'
+      category: 'category A'
     },
     { title: 'Nombre de la capa2',
-      category: 'category'
+      category: 'categoryB'
     },
     { title: 'Nombre de la capa3',
-      category: 'category'
+      category: 'categoryC'
     },
     { title: 'Nombre de la capa4',
-      category: 'category'
+      category: 'categoryD'
     },
     { title: 'Nombre de la capa5',
-      category: 'category'
+      category: 'categoryE'
     }
 
   ];
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Cards data={data}onDownload={descarga}/>
+      <Cards data={cardsData}onDownload={descarga}/>
     </div>
   );
 }
