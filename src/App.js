@@ -1,23 +1,28 @@
 import React from 'react';
 import Cards from './Cards/index.js';
 import './Cards/index.js';
+import './index.css';
 
 function App() {
   const data = [
-    { texto: 'Nombre de la capa'},
-    { texto: 'Nombre de la capa'},
-    { texto: 'Nombre de la capa'},
-    { texto: 'Nombre de la capa'},
-    { texto: 'Nombre de la capa'}
+    { title: 'Nombre de la capa1',
+      category: 'name category A'
+    },
+    { title: 'Nombre de la capa2',
+      category: 'category'
+    },
+    { title: 'Nombre de la capa3',
+      category: 'category'
+    },
+    { title: 'Nombre de la capa4',
+      category: 'category'
+    },
+    { title: 'Nombre de la capa5',
+      category: 'category'
+    }
 
   ];
-  const info =[
-    {item: 'categoria'},
-    {item: 'categoria'},
-    {item: 'categoria'},
-    {item: 'categoria'},  
-    {item: 'categoria'}
-  ];
+ 
   const descarga = () => {
      console.log("descarga");
     };
@@ -25,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Cards data={data} info={info} onDownload={descarga}/>
+      <Cards data={data}onDownload={descarga}/>
     </div>
   );
 }

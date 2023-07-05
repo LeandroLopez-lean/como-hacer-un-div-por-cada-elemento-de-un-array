@@ -1,51 +1,56 @@
-body{
-    background-color:antiquewhite;
+body {
+  background-color: antiquewhite;
+}
+.div{
+  font-size: 20px;
+}
+.card-container {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  display: grid;
+  color: rgb(65, 56, 56);
+  border-radius: 10px;
+  width: 500px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 100px;
+  padding-left: 10px;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr 2fr;
+  align-items: top;
+  position: relative; /* Agrega una posición relativa */
 }
 
-.card-container {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);/* este box-shadow me lo robe de un archivo que tenia de coderHouse */
-    display: grid;
-    color: rgb(65, 56, 56);
-    border-radius: 10PX;
-    width: 500px;
-    height: 150px;
-    margin-top: 25px;
-    margin-left: 100px;
-    padding-left: 10px;
-    grid-template-columns: 3fr;
-    grid-template-rows: 3fr 2fr;
-    align-items: top;
-  }
-  
-  .icon-container {
-    display: flex;
-    gap: 10px;
-    align-items:flex-end;
-  }
-  .categori{
-    padding-right: 280px;
-  }
-  .dowloand{
-    cursor: pointer;
-  }
-  .water-icon{
-    cursor: pointer;
-  }
-  .menu-icon{
-    cursor: pointer;
-  }
-  .exclamation-icon{
-    cursor: pointer;
-  }
-  .close-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: black;
-    font-size: 24px;
-  }
-  .titulo{
-    color: black;
-    font-size: 24px;
-  }
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.water-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.dowloand-icon,
+.menu-icon,
+.exclamation-icon,
+.potentiometer-icon {
+  cursor: pointer;
+}
