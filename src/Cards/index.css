@@ -6,7 +6,7 @@ body {
   display: grid;
   color: rgb(65, 56, 56);
   border-radius: 10px;
-  width: 300px;
+  width: 250px;
   height: 100px;
   margin-top: 25px;
   margin-left: 100px;
@@ -22,8 +22,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.title{
+  flex-grow: 1;
+}
+.sitemap{
+  padding: 0px;
+  padding-right: 8px;
+}
 
 .close-icon {
+  justify-content: end;
   cursor: pointer;
   color: black;
 }
@@ -35,8 +43,15 @@ body {
 }
 
 .water-icon {
+  display: flex;
+  padding-right: 30px;
   margin-right: 10px;
   cursor: pointer;
+  align-items: center;
+}
+.category{
+  display: flex;
+  padding-left: 10px;
 }
 
 .icons {

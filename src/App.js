@@ -5,20 +5,20 @@ import './index.css';
 
 function App() {
   const cardsData = [
-    { title: 'Nombre de la capa1',
-      category: 'category A'
+    { title: 'Nombre de la capa',
+      category: 'categoria'
     },
-    { title: 'Nombre de la capa2',
-      category: 'categoryB'
+    { title: 'Nombre de la capa',
+      category: 'categoria'
     },
-    { title: 'Nombre de la capa3',
-      category: 'categoryC'
+    { title: 'Nombre de la capa',
+      category: 'categoria'
     },
-    { title: 'Nombre de la capa4',
-      category: 'categoryD'
+    { title: 'Nombre de la capa',
+      category: 'categoria'
     },
-    { title: 'Nombre de la capa5',
-      category: 'categoryE'
+    { title: 'Nombre de la capa',
+      category: 'categoria'
     }
 
   ];

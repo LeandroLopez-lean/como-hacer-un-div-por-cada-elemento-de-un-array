@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faDownload,
   faTimes,
-  faSlidersH,
+  faGear,
   faWater, faBars,
-  faExclamationCircle
+  faExclamationCircle,
+ faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
 import { Card, Text } from '@mantine/core';
 import './index.css';
@@ -18,13 +19,14 @@ function Cards({ data, info, onDownload }) {
         {data.map((card, index) => (
           <Card key={index} className='card-container'>
             <div className='top-bar'>
-              <Text >{card.title}</Text>
+            <FontAwesomeIcon icon={faSitemap} className='sitemap'/>
+              <Text className='title'>{card.title}</Text>
               <FontAwesomeIcon className="close-icon" icon={faTimes} />
             </div>
             <div className='content'>
               <div className="water-icon">
                 <FontAwesomeIcon icon={faWater} />
-                <Text >{card.category}</Text>
+                <Text className='category'>{card.category}</Text>
               </div>
               <div className='icon-container'>
                 <div className='icons'>
@@ -39,7 +41,7 @@ function Cards({ data, info, onDownload }) {
                     className="exclamation-icon" 
                   />
                   <FontAwesomeIcon 
-                    icon={faSlidersH} 
+                    icon={faGear} 
                     className="potentiometer-icon" 
                   />
                 </div>
