@@ -4,7 +4,8 @@ import {
   faDownload,
   faTimes,
   faGear,
-  faWater, faBars,
+  faWater,
+  faBars,
   faExclamationCircle,
  faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
@@ -12,26 +13,7 @@ import { Card, Text } from '@mantine/core';
 import './index.css';
 
 function Cards({ data }) {
-
-  const waterClick = () => {
-    console.log("water")
-  }
-
-  const onDownload = () => {
-    console.log("descarga");
-   };
-   
-  const MenuClick = () => {
-    console.log('Menu');
-  };
-
-  const ExclamationClick = () => {
-    console.log('Exclamation');
-  };
-
-  const configClick = () => {
-    console.log('configuracion');
-  };
+ 
   return (
       <div className='div'>
         {data.map((card, index) => (
@@ -43,34 +25,24 @@ function Cards({ data }) {
             </div>
             <div className='content'>
               <div className="water-icon">
-                <FontAwesomeIcon icon={faWater} 
-                onClick={waterClick}
+                <FontAwesomeIcon 
+                icon={faWater} 
                 />
                 <Text className='category'>{card.category}</Text>
               </div>
               <div className='icon-container'>
-                <div className='icons'>
-                  <FontAwesomeIcon
-                    icon={faDownload}
-                    className='dowloand'
-                    onClick={onDownload} 
-                  />
-                  <FontAwesomeIcon icon={faBars} 
-                  className="menu" 
-                  onClick={MenuClick}
-                  />
-                  <FontAwesomeIcon 
-                    icon={faExclamationCircle}
-                    className='exclamation' 
-                    onClick={ExclamationClick} 
-                  />
-                  <FontAwesomeIcon 
-                    icon={faGear} 
-                    className="config" 
-                    onClick={configClick}
-                  />
-                </div>
-              </div>
+  <div className='icons'>
+    {
+      card.options?.map((option) => (
+        <FontAwesomeIcon
+          icon={option.icon}
+          className='dowloand'
+          onClick={option.onClick} 
+        />
+      ))
+    }
+  </div>
+</div>
             </div>
           </Card>
         ))}
