@@ -6,17 +6,16 @@ body {
   display: grid;
   color: rgb(65, 56, 56);
   border-radius: 10px;
-  width: 250px;
+  width: 400px; /* width: 250px;  */
   height: 100px;
   margin-top: 25px;
-  margin-left: 100px;
+  margin-left: 100px; 
   padding-left: 10px;
   grid-template-columns: 3fr;
   grid-template-rows: 3fr 2fr;
   align-items: top;
-  position: relative; /* Agrega una posición relativa */
+  position: relative;
 }
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -28,24 +27,22 @@ body {
 .sitemap{
   padding: 0px;
   padding-right: 8px;
+  cursor: pointer;
 }
-
 .close-icon {
   justify-content: end;
   cursor: pointer;
   color: black;
 }
-
 .content {
-  
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
 }
-
 .water-icon {
   display: flex;
-  padding-right: 30px;
-  margin-right: 10px;
+  justify-content: flex-start;
   cursor: pointer;
   align-items: center;
 }
@@ -53,26 +50,20 @@ body {
   display: flex;
   padding-left: 10px;
 }
-
 .icons {
   display: flex;
   gap: 10px;
-}
+  justify-content: end;}
 .icons-container {
+  border: 3px solid black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.dowloand-icon,
-.menu-icon,
-.exclamation-icon,
-.potentiometer-icon {
+.dowloand,
+.menu,
+.exclamation,
+.config {  
+  justify-self: right;
   cursor: pointer;
 }
-/* display: flex;
-justify-content: space-between;
-align-items: center;
-position: absolute;
-top: 10px;
-right: 10px;
- */

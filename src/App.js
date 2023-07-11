@@ -8,29 +8,24 @@ function App() {
     { title: 'Nombre de la capa',
       category: 'categoria'
     },
-    { title: 'Nombre de la capa',
-      category: 'categoria'
+    { title: 'capacidad',
+      category: 'categoria superficie'
     },
-    { title: 'Nombre de la capa',
-      category: 'categoria'
+    { title: 'capa lineal',
+      category: 'bajada'
     },
-    { title: 'Nombre de la capa',
-      category: 'categoria'
+    { title: 'capa',
+      category: 'base'
     },
-    { title: 'Nombre de la capa',
-      category: 'categoria'
+    { title: 'Nombre',
+      category: 'category'
     }
 
-  ];
- 
-  const descarga = () => {
-     console.log("descarga");
-    };
-  
+  ];  
 
   return (
     <div className='App'>
-      <Cards data={cardsData}onDownload={descarga}/>
+      <Cards data={cardsData}/>
     </div>
   );
 }

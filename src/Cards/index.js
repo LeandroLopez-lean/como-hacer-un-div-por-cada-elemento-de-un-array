@@ -11,9 +11,27 @@ import {
 import { Card, Text } from '@mantine/core';
 import './index.css';
 
+function Cards({ data }) {
 
+  const waterClick = () => {
+    console.log("water")
+  }
 
-function Cards({ data, info, onDownload }) {
+  const onDownload = () => {
+    console.log("descarga");
+   };
+   
+  const MenuClick = () => {
+    console.log('Menu');
+  };
+
+  const ExclamationClick = () => {
+    console.log('Exclamation');
+  };
+
+  const configClick = () => {
+    console.log('configuracion');
+  };
   return (
       <div className='div'>
         {data.map((card, index) => (
@@ -25,24 +43,31 @@ function Cards({ data, info, onDownload }) {
             </div>
             <div className='content'>
               <div className="water-icon">
-                <FontAwesomeIcon icon={faWater} />
+                <FontAwesomeIcon icon={faWater} 
+                onClick={waterClick}
+                />
                 <Text className='category'>{card.category}</Text>
               </div>
               <div className='icon-container'>
                 <div className='icons'>
                   <FontAwesomeIcon
                     icon={faDownload}
-                    className='dowloand-icon'
+                    className='dowloand'
                     onClick={onDownload} 
                   />
-                  <FontAwesomeIcon icon={faBars} className="menu-icon" />
+                  <FontAwesomeIcon icon={faBars} 
+                  className="menu" 
+                  onClick={MenuClick}
+                  />
                   <FontAwesomeIcon 
-                    icon={faExclamationCircle} 
-                    className="exclamation-icon" 
+                    icon={faExclamationCircle}
+                    className='exclamation' 
+                    onClick={ExclamationClick} 
                   />
                   <FontAwesomeIcon 
                     icon={faGear} 
-                    className="potentiometer-icon" 
+                    className="config" 
+                    onClick={configClick}
                   />
                 </div>
               </div>
