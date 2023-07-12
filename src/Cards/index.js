@@ -7,46 +7,38 @@ import {
   faWater,
   faBars,
   faExclamationCircle,
- faSitemap,
+  faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
 import { Card, Text } from '@mantine/core';
 import './index.css';
 
-function Cards({ data }) {
- 
+function Cards({ data, icons }) {
+
   return (
-      <div className='div'>
-        {data.map((card, index) => (
-          <Card key={index} className='card-container'>
-            <div className='top-bar'>
-            <FontAwesomeIcon icon={faSitemap} className='sitemap'/>
-              <Text className='title'>{card.title}</Text>
-              <FontAwesomeIcon className="close-icon" icon={faTimes} />
+    <div className='div'>
+      {data.map((card, index) => (
+        <Card key={index} className='card-container'>
+          <div className='top-bar'>
+            <FontAwesomeIcon icon={faSitemap} className='sitemap' />
+            <Text className='title'>{card.title}</Text>
+            <FontAwesomeIcon className="close-icon" icon={faTimes} />
+          </div>
+          <div className='content'>
+            <div className="water-icon">
+              <FontAwesomeIcon
+                icon={faWater}
+              />
+              <Text className='category'>{card.category}</Text>
             </div>
-            <div className='content'>
-              <div className="water-icon">
-                <FontAwesomeIcon 
-                icon={faWater} 
-                />
-                <Text className='category'>{card.category}</Text>
-              </div>
-              <div className='icon-container'>
-  <div className='icons'>
-    {
-      card.options?.map((option) => (
-        <FontAwesomeIcon
-          icon={option.icon}
-          className='dowloand'
-          onClick={option.onClick} 
-        />
-      ))
-    }
-  </div>
-</div>
+            <div className='icon-container'>
+              {icons[index] && icons[index].map((icon, iconIndex) => (
+                <FontAwesomeIcon key={iconIndex} icon={icon} className='icon' />
+              ))}
             </div>
-          </Card>
-        ))}
-      </div>
+          </div>
+        </Card>
+      ))}
+    </div>
   );
 }
 
