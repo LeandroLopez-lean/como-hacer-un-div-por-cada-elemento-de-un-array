@@ -2,44 +2,60 @@ import React from 'react';
 import Cards from './Cards/index.js';
 import './Cards/index.js';
 import './index.css';
-<<<<<<< HEAD
 import {
   faDownload,
-  faTimes,/* x */
+  faBars,
   faGear,/* config */
-  faWater, 
-  faDownload,/* menu */
   faExclamationCircle,
-  faSitemap,/* pc */
 } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const cardsData = [
-    [faTimes, faGear],
-    [faDownload, faSitemap],
-    [faExclamationCircle],
-=======
-
-function App() {
-  const cardsData = [
-    { title: 'Nombre de la capa',
-      category: 'categoria'
+  { title: 'Nombre de la capa',
+  category: 'categoria',
+  options : [
+    {
+      icon: faDownload,
+      onClick: () => console.log('download')
     },
-    { title: 'capacidad',
-      category: 'categoria superficie'
+    {
+      icon: faExclamationCircle,
+      onClick: () => console.log('info')
     },
-    { title: 'capa lineal',
-      category: 'bajada'
+    {
+      icon: faBars,
+      onClick: () => console.log('info')
     },
-    { title: 'capa',
-      category: 'base'
+    {
+      icon: faGear,
+      onClick: () => console.log('config')
     },
-    { title: 'Nombre',
-      category: 'category'
+  ]
+},
+{ title: 'capacidad',
+  category: 'categoria superficie',
+  options : [
+    {
+      icon: faDownload,
+      onClick: () => console.log('download')
+    },
+   
+    { 
+      icon: faGear,
+      onClick: () => console.log('config')
     }
-
->>>>>>> parent of 31f74a1 (armado de array para los iconos)
-  ];  
+  ]
+},
+{ title: 'capa lineal',
+  category: 'bajada'
+},
+{ title: 'capa',
+  category: 'base'
+},
+{ title: 'Nombre',
+  category: 'category'
+}
+]; 
 
   return (
     <div className='App'>
