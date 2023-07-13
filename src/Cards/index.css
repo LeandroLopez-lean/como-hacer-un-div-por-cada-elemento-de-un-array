@@ -6,7 +6,7 @@ body {
   display: grid;
   color: rgb(65, 56, 56);
   border-radius: 10px;
-  width: 270px; /* width: 250px;  */
+  width: 400px; /* width: 250px;  */
   height: 100px;
   margin-top: 25px;
   margin-left: 100px; 
@@ -17,13 +17,11 @@ body {
   position: relative;
 }
 .top-bar {
-  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .title{
-  margin: 0px 10px 5px;
   flex-grow: 1;
 }
 .sitemap{
@@ -55,8 +53,7 @@ body {
 .icons {
   display: flex;
   gap: 10px;
-  justify-content: end;
-}
+  justify-content: end;}
 .icons-container {
   border: 3px solid black;
   display: flex;
